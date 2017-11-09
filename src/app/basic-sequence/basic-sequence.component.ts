@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/fromEvent';
+import { fromEvent } from 'rxjs/observable/fromEvent';
 
 @Component({
   selector: 'basic-sequence',
@@ -19,9 +18,8 @@ export class BasicSequenceComponent implements OnInit {
   }
 
   ngOnInit() {
-    Observable
-      .fromEvent(this.button._elementRef.nativeElement, 'click')
-      // .fromEvent(this.button.nativeElement, 'click')
+    fromEvent(this.button._elementRef.nativeElement, 'click')
+    // fromEvent(this.button.nativeElement, 'click')
       .subscribe(() => this.message = 'Beast Mode Activated!');
   }
 
