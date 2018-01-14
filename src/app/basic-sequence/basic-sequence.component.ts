@@ -9,7 +9,7 @@ import { fromEvent } from 'rxjs/observable/fromEvent';
 export class BasicSequenceComponent implements OnInit {
 
   @ViewChild('button') button;
-  // @ViewChild('button', { read: ElementRef }) button: ElementRef;
+  // @ViewChild('button', {read: ElementRef}) button: ElementRef;
 
   message: string;
 
