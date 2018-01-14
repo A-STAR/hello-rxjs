@@ -18,8 +18,8 @@ export class BasicSequenceComponent implements OnInit {
   }
 
   ngOnInit() {
-    fromEvent(this.button._elementRef.nativeElement, 'click')
     // fromEvent(this.button.nativeElement, 'click')
+    fromEvent(this.button._elementRef.nativeElement, 'click')
       .subscribe(() => this.message = 'Beast Mode Activated!');
   }
 
