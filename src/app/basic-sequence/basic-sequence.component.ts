@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+
 import { fromEvent } from 'rxjs/observable/fromEvent';
 
 @Component({
