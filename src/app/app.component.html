@@ -1,1 +1,17 @@
+<nav>
+
+  <a href routerLink="/" routerLinkActive [routerLinkActiveOptions]="{exact: true}" #basicSequence="routerLinkActive" [hidden]="basicSequence.isActive">Basic Sequence</a>
+
+  <span [hidden]="!basicSequence.isActive">Basic Sequence</span>
+
+  <a href routerLink="/mapping-values" routerLinkActive #mappingValues="routerLinkActive" [hidden]="mappingValues.isActive">Mapping Values</a>
+
+  <span [hidden]="!mappingValues.isActive">Mapping Values</span>
+
+  <a href routerLink="/next" routerLinkActive #next="routerLinkActive" [hidden]="next.isActive">Next</a>
+
+  <span [hidden]="!next.isActive">Next</span>
+
+</nav>
+
 <router-outlet></router-outlet>
