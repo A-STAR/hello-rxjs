@@ -6,6 +6,10 @@ const routes: Routes = [
     path: '',
     loadChildren: 'app/basic-sequence/basic-sequence.module#BasicSequenceModule'
   },
+  {
+    path: 'mapping-values',
+    loadChildren: 'app/mapping-values/mapping-values.module#MappingValuesModule'
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
