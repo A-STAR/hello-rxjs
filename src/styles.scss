@@ -3,4 +3,31 @@
 
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  padding: 100px;
+}
+
+.container {
+  padding: 100px;
+}
+
+.ball {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-image: radial-gradient(orange, red);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-image: radial-gradient(#DDD, white);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+app-circle {
+  position: absolute;
 }
