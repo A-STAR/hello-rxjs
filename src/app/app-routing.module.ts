@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'mapping-values',
     loadChildren: 'app/mapping-values/mapping-values.module#MappingValuesModule'
   },
+  {
+    path: 'maintaining-state',
+    loadChildren: 'app/maintaining-state/maintaining-state.module#MaintainingStateModule'
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
