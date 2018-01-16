@@ -14,6 +14,10 @@ const routes: Routes = [
     path: 'maintaining-state',
     loadChildren: 'app/maintaining-state/maintaining-state.module#MaintainingStateModule'
   },
+  {
+    path: 'merging-streams',
+    loadChildren: 'app/merging-streams/merging-streams.module#MergingStreamsModule'
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

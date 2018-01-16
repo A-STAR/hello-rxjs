@@ -12,6 +12,10 @@
 
   <span [hidden]="!maintainingState.isActive">Maintaining State</span>
 
+  <a href routerLink="/merging-streams" routerLinkActive #mergingStreams="routerLinkActive" [hidden]="mergingStreams.isActive">Merging Streams</a>
+
+  <span [hidden]="!mergingStreams.isActive">Merging Streams</span>
+
 </nav>
 
 <router-outlet></router-outlet>
