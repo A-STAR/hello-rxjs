@@ -24,7 +24,7 @@ export class MaintainingStateComponent implements OnInit {
       .pipe(
         map(event => ({ x: 10, y: 0 }) ),
         startWith({ x: 200, y: 200 }),
-        scan((acc, curr) => Object.assign({ }, acc, {x: acc.x + curr.x}) ),
+        scan((acc, curr) => Object.assign({ }, acc, {x: acc.x + curr.x}) )
       )
       .subscribe(position => this.position = position);
   }
