@@ -16,6 +16,10 @@
 
   <span [hidden]="!mergingStreams.isActive">Merging Streams</span>
 
+  <a href routerLink="/mapping-functions" routerLinkActive #mappingFunctions="routerLinkActive" [hidden]="mappingFunctions.isActive">Mapping to Functions</a>
+
+  <span [hidden]="!mappingFunctions.isActive">Mapping to Functions</span>
+
 </nav>
 
 <router-outlet></router-outlet>

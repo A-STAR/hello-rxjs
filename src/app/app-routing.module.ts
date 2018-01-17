@@ -18,6 +18,10 @@ const routes: Routes = [
     path: 'merging-streams',
     loadChildren: 'app/merging-streams/merging-streams.module#MergingStreamsModule'
   },
+  {
+    path: 'mapping-functions',
+    loadChildren: 'app/mapping-functions/mapping-functions.module#MappingFunctionsModule'
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
