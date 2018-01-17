@@ -22,6 +22,10 @@ const routes: Routes = [
     path: 'mapping-functions',
     loadChildren: 'app/mapping-functions/mapping-functions.module#MappingFunctionsModule'
   },
+  {
+    path: 'sequencing-streams',
+    loadChildren: 'app/sequencing-streams/sequencing-streams.module#SequencingStreamsModule'
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 

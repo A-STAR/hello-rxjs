@@ -20,6 +20,10 @@
 
   <span [hidden]="!mappingFunctions.isActive">Mapping to Functions</span>
 
+  <a href routerLink="/sequencing-streams" routerLinkActive #sequencingStreams="routerLinkActive" [hidden]="sequencingStreams.isActive">Sequencing Streams</a>
+
+  <span [hidden]="!sequencingStreams.isActive">Sequencing Streams</span>
+
 </nav>
 
 <router-outlet></router-outlet>
