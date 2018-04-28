@@ -12,6 +12,7 @@ import { map, startWith, tap, switchMap, takeUntil } from 'rxjs/operators';
 export class SequencingStreamsComponent implements OnInit {
 
   @ViewChild('ball') ball;
+
   position: any;
 
   ngOnInit() {
