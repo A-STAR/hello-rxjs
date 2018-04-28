@@ -19,7 +19,7 @@ export class SequencingStreamsComponent implements OnInit {
     const BALL_OFFSET = 50;
 
     const move$ = fromEvent<MouseEvent>(document, 'mousemove').pipe(map(event => {
-      const offset = this.offset(event.target);
+      const offset = this.offset(<HTMLHtmlElement>event.target);
 
       return {
         x: event.clientX - offset.left - BALL_OFFSET,
@@ -43,7 +43,7 @@ export class SequencingStreamsComponent implements OnInit {
       .subscribe(position => this.position = position);
   }
 
-  offset(element: any) {
+  offset(element: Element) {
     const body = document.body;
     const rect = element.getBoundingClientRect();
 
