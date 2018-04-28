@@ -12,9 +12,6 @@ import { filter, mapTo, map, startWith, scan } from 'rxjs/operators';
 })
 export class MappingFunctionsComponent implements OnInit {
 
-  @ViewChild('left') left;
-  @ViewChild('right') right;
-
   position: any;
 
   constructor() { }
