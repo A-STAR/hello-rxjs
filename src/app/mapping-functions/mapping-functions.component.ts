@@ -44,7 +44,6 @@ export class MappingFunctionsComponent implements OnInit {
 
     merge(leftArrow$, rightArrow$, upArrow$, downArrow$)
       .pipe(
-        // startWith(start({ x: 200, y: 200 })),
         startWith(start({ x: 200, y: 200 })),
         scan((acc, curr) => curr(acc))
       )
