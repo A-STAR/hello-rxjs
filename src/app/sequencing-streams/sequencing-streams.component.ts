@@ -20,6 +20,7 @@ export class SequencingStreamsComponent implements OnInit {
 
     const move$ = fromEvent<MouseEvent>(document, 'mousemove').pipe(map(event => {
       const offset = this.offset(event.target);
+
       return {
         x: event.clientX - offset.left - BALL_OFFSET,
         y: event.pageY - BALL_OFFSET
