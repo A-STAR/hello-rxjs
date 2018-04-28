@@ -3,11 +3,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { merge } from 'rxjs/observable/merge';
-import { filter } from 'rxjs/operators/filter';
-import { mapTo } from 'rxjs/operators/mapTo';
-import { map } from 'rxjs/operators/map';
-import { startWith } from 'rxjs/operators/startWith';
-import { scan } from 'rxjs/operators/scan';
+import { filter, mapTo, map, startWith, scan } from 'rxjs/operators';
 
 @Component({
   selector: 'mapping-functions',

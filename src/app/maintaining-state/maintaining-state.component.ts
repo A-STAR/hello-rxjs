@@ -1,10 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import { fromEvent } from 'rxjs/observable/fromEvent';
-import { filter } from 'rxjs/operators/filter';
-import { map } from 'rxjs/operators/map';
-import { startWith } from 'rxjs/operators/startWith';
-import { scan } from 'rxjs/operators/scan';
+import { filter, map, startWith, scan } from 'rxjs/operators';
 
 @Component({
   selector: 'maintaining-state',

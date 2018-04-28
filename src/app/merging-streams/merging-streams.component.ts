@@ -3,10 +3,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { merge } from 'rxjs/observable/merge';
-import { filter } from 'rxjs/operators/filter';
-import { map } from 'rxjs/operators/map';
-import { startWith } from 'rxjs/operators/startWith';
-import { scan } from 'rxjs/operators/scan';
+import { filter, map, startWith, scan } from 'rxjs/operators';
 
 @Component({
   selector: 'merging-streams',

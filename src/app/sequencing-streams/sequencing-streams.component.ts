@@ -2,11 +2,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 import { Observable } from 'rxjs/Observable';
 import { fromEvent } from 'rxjs/observable/fromEvent';
-import { map } from 'rxjs/operators/map';
-import { startWith } from 'rxjs/operators/startWith';
-import { tap } from 'rxjs/operators/tap';
-import { switchMap } from 'rxjs/operators/switchMap';
-import { takeUntil } from 'rxjs/operators/takeUntil';
+import { map, startWith, tap, switchMap, takeUntil } from 'rxjs/operators';
 
 @Component({
   selector: 'sequencing-streams',
