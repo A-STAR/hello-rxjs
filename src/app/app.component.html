@@ -24,6 +24,10 @@
 
   <span [hidden]="!sequencingStreams.isActive">Sequencing Streams</span>
 
+  <a href routerLink="/stream-origins" routerLinkActive #streamOrigins="routerLinkActive" [hidden]="streamOrigins.isActive">Stream Origins</a>
+
+  <span [hidden]="!streamOrigins.isActive">Stream Origins</span>
+
 </nav>
 
 <router-outlet></router-outlet>

@@ -26,6 +26,10 @@ const routes: Routes = [
     path: 'sequencing-streams',
     loadChildren: 'app/sequencing-streams/sequencing-streams.module#SequencingStreamsModule'
   },
+  {
+    path: 'stream-origins',
+    loadChildren: 'app/stream-origins/stream-origins.module#StreamOriginsModule'
+  },
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
