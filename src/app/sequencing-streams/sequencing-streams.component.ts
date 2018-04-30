@@ -44,19 +44,17 @@ export class SequencingStreamsComponent implements OnInit {
   }
 
   offset(element: Element) {
-    const body = document.body;
-
     /**
      * size & position of element relative to the viewport
      */
     const rect = element.getBoundingClientRect();
 
     /**
-     * position of element relative to the page (body)
+     * position of element relative to the window
      */
     const offset = {
-      top: rect.top + body.scrollTop,
-      left: rect.left + body.scrollLeft
+      top: rect.top + window.scrollY,
+      left: rect.left + window.scrollX
     };
 
     return offset;
